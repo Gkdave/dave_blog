@@ -8,7 +8,7 @@
     <small> Post added {{post.date_added }}</small>
     <p> {{ post.intro }}</p>
    </div>
-   
+   <a href="{% url 'post_detail' post.slug  %}">Raed More </a>
    {% endfor %}
 {% endblock content %}
     
